@@ -5,6 +5,11 @@ let isActive = false // 0
 isActive = true // 1
 console.log(isActive)
 
+let isActive = false
+isActive = true
+console.log(isActive)
+
+
 
 let userName;
 let isUserName = Boolean(userName)
