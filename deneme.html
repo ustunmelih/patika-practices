@@ -7,67 +7,32 @@
     <title>Document</title>
 </head>
 <body>
+
     
 </body>
 </html>
 
-<script>
-    // ********** Veri Turunu Ogrenmek ve Veri Turu Donusumleri ********** 
+<SCript>
+let fullName = prompt("Lutfen Adinizi Giriniz: ")
 
-// veri turunu ogrenmek typeof:
-let price = 100
-let stringPrice = "111"
-let hasPassword = true
+let greeting = document.querySelector("#greeting")
 
-console.log("price: ", typeof(price) 
-
-)
-
-console.log("stringprice: ", typeof(stringPrice)
-
-
-)
-
-console.log("haspassword: " , typeof(hasPassword))
-
-
-// string(metinsel) bilgileri int ve float'a donusturmek
-let number1 = "11"
-number1 = parseInt(number1)
-console.log(number1 , typeof(number1))
-
-let number2 = "11px"
-number2 = parseInt(number2)
-console.log(number2 , typeof(number2))
-
-let number3 = "11.1"
-number3 = Number(number3)
-console.log("number3: ", number3, typeof(number3) )
-
-let number4 = "13.3od"
-number4 = parseFloat(number4)
-console.log("number4: ", number4, typeof(number4) )
-
-// number veri tipinden string'e donusturmek:
-let number5 = 55
-number5 = number5.toString()
-console.log(number5, typeof(number5))
-
-let fullname = "melih"
-fullname += "ustun"
-console.log(fullname)
-
-let num = 111
-num += 4
-console.log(num)
-console.log(29%4)
-console.log(Math.round(1.4))
-
-
-let aquare = nam  => (nam*nam);
-console.log(aquare(5));
+greeting.innerHTML = `${greeting.innerHTML} <small style="color:red">${fullName}</small>`
 
 
 
+</SCript>
 
-</script>
+
+<!-- not getElementsByTagName  aynı tagı secer 
+
+const animals = document.getElementsByTagName('p'); 
+// Çıktı:  HTMLCollection(4) [p, p, p, p]
+
+Elemanları isimlerine göre getirmek
+const emails = document.getElementsByName('e-posta');
+
+class name
+
+const kuslar = document.getElementsByClassName('kusu');
+-->
