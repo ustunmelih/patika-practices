@@ -1,0 +1,24 @@
+/**************** Layout ************/
+
+/* class -> .text-red {} */
+/* #id-bilgisi -> .text-red {}  */
+
+
+h1 {
+  font-size: 40px;
+  color: #202020;
+}
+
+p {
+  font-size: 20px;
+}
+
+
+
+.head{
+    font-size: 20px;
+    color: purple;
+
+}
+
+
