@@ -18,7 +18,6 @@ console.log(password)
 
 // degisken atamasi yapmadan once kullanmaya calismak:
 
-
 /* HATALI KULLANIM:  
 console.log(fullName)
 let fullName = "Hakan Yalcinkaya";

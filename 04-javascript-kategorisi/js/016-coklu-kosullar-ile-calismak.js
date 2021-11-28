@@ -1,4 +1,4 @@
-// ********** Coklu Kosullarla Calismak **********
+// ********** Coklu Kosullarla Calismak **********j
 
 let userName = prompt("Kullanici Adiniz:")
 let age = prompt("Yasiniz:")

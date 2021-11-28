@@ -3,7 +3,7 @@
 // https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
 // https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
 
-// let h2 = document.getElementsByTagName('h2')
+// let h2 = document.getElementsByTagName('h2')dd
 let title = document.getElementById('title')
 title.innerHTML = "Degisen Bilgi"
 console.log(title.innerHTML)
