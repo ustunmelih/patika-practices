@@ -2,60 +2,60 @@
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 // https://www.w3schools.com/js/js_array_methods.asp
 
-let items = [1, 2, 3, 4, 5] 
+let items = [1, 2, 3, 4, 5]
+let females = [ayse, esma, cagla]
+let males = [melih, ali, Mehmet]
 
-// Array icinde Array:
-let femaleUsers = ["Ayse", "Hulya", "Merve"]
-let maleUsers = ["Ahmet", "Hasan", "Mehmet"]
-
-items.unshift(femaleUsers)
-
-items.push(maleUsers)
-
+items.push(males)
 console.log(items)
 
-console.log(items.length)
-console.log(items[0].length) // Array icindeki istedigimiz Array'in length bilgisini aldik
-console.log(items[0][0]) // Ayse bilgisine ulastik :)
+// items.unshift(femaleUsers)
 
-// Array icerisinden oge ayirmak -> splice(pos, item?)
-let newItems = items.splice(1, 5)
+// items.push(maleUsers)
 
-console.log("newItems: ", newItems)
-console.log("items: ", items)
-// Array icerisindeki ogenin index bilgisini bulmak -> indexOf('value')
-items.unshift("lorem")
-items.push("ipsum")
+// console.log(items)
 
-console.log( items.indexOf("ipsum") )
+// console.log(items.length)
+// console.log(items[0].length) // Array icindeki istedigimiz Array'in length bilgisini aldik
+// console.log(items[0][0]) // Ayse bilgisine ulastik :)
 
-// Array Kopyalamak -> slice, [...ES6]
-let copyItems = items
-console.log(items)
+// // Array icerisinden oge ayirmak -> splice(pos, item?)
+// let newItems = items.splice(1, 5)
 
-copyItems.pop() // son ogeyi cikarttik
-console.log("copyItems", copyItems)
-console.log("items", items)
+// console.log("newItems: ", newItems)
+// console.log("items: ", items)
+// // Array icerisindeki ogenin index bilgisini bulmak -> indexOf('value')
+// items.unshift("lorem")
+// items.push("ipsum")
 
-console.log("kopyalandiktan sonraki hali:")
-copyItems = items.slice() // kopyalama yapti
-copyItems.pop() // son ogeyi cikarttik
-console.log("copyItems", copyItems)
-console.log("items", items)
+// console.log( items.indexOf("ipsum") )
 
-let es6Items = [...items] // es6 ve sonrasinda gelen kopyalama islemi
-console.log(es6Items)
+// // Array Kopyalamak -> slice, [...ES6]
+// let copyItems = items
+// console.log(items)
+
+// copyItems.pop() // son ogeyi cikarttik
+// console.log("copyItems", copyItems)
+// console.log("items", items)
+
+// console.log("kopyalandiktan sonraki hali:")
+// copyItems = items.slice() // kopyalama yapti
+// copyItems.pop() // son ogeyi cikarttik
+// console.log("copyItems", copyItems)
+// console.log("items", items)
+
+// let es6Items = [...items] // es6 ve sonrasinda gelen kopyalama islemi
+// console.log(es6Items)
 
 // Iki Array Bilgisini Birlestirmek -> [...ES6, ...ES6]
-let allUsers = [...femaleUsers, ...maleUsers] // es6 birden fazla array yapisini birlestirmek
-console.log(allUsers)
+// let allUsers = [...femaleUsers, ...maleUsers] // es6 birden fazla array yapisini birlestirmek
+// console.log(allUsers)
 
 // Array icerisindeki bilgiyi String'e cevirmek -> toString, join
-console.log(allUsers.toString())
-console.log(allUsers.join(" --- "))
-
+// console.log(allUsers.toString())
+// console.log(allUsers.join(" --- "))
 
 // Istedigimiz Index Bilgisine Oge Eklemek -> splice(index, 0, value)
-allUsers.splice(allUsers.length -1, 0, "Melissa")
-allUsers.splice(Math.floor( allUsers.length / 2 ), 0, "Lorem")
-console.log(allUsers)
+// allUsers.splice(allUsers.length -1, 0, "Melissa")
+// allUsers.splice(Math.floor( allUsers.length / 2 ), 0, "Lorem")
+// console.log(allUsers)
